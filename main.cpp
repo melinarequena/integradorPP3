@@ -141,7 +141,7 @@ private:
     string nombre;
     string apellido;
     string matricula;
-    string Rol;
+    bool Rol;
 
     /*Los empleados deben tener roles (administradores, empleados
     de ventas
