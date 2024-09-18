@@ -1,3 +1,0 @@
-/home/spendice/CLionProjects/IntegradorPP3/cmake-build-debug/CMakeFiles/trabajoIntegradorPP3.dir
-/home/spendice/CLionProjects/IntegradorPP3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/spendice/CLionProjects/IntegradorPP3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
