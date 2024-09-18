@@ -12,11 +12,28 @@ using namespace std;
 
 
 class Contenedores {
-private:
+    private:
     vector<Automovil*> listadoAutomoviles;
     vector<Cliente*> listadoClientes;
     vector<Reservas*> listadoReservas;
 
+    public:
+    Contenedores();
+    ~Contenedores();
+
+    void agregarAutomovil(Automovil * automovil);
+
+    void agregarCliente(Cliente * cliente);
+
+    void agregarReserva(Reservas * reserva);
+
+    void eliminarAutomovil(string matric);
+
+    void verListAutomoviles();
+
+    void verListClientes();
+
+    void verListReservas();
 };
 
 

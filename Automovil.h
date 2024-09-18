@@ -24,6 +24,8 @@ protected:
 public:
     Automovil(string marca, string modelo, string matricula, string combustible, float precio, bool disponibilidad,Mantenimiento m);
     ~Automovil();
+    string getMatricula();
+    void getInfo();
 };
 
 

@@ -17,4 +17,8 @@ add_executable(trabajoIntegradorPP3 main.cpp
         Mantenimiento.cpp
         Mantenimiento.h
         Contenedores.cpp
-        Contenedores.h)
+        Contenedores.h
+        AdministradorDeReservas.cpp
+        AdministradorDeReservas.h
+        EmpleadoDeVentas.cpp
+        EmpleadoDeVentas.h)
