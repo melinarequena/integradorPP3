@@ -7,14 +7,13 @@
 #include "Cliente.h"
 #include "Reservas.h"
 #include "Contenedores.h"
+using namespace std;
 
-class AdministradorDeReservas : Empleados {
-    public:
-        AdministradorDeReservas(string nom, string ap, string mat, int dni) : Empleados(nom, ap, mat, dni) {
-        }
-        void AdministradorDeReservas::hacerReserva(Automovil auto, Cliente cliente, Contenedores contenedores) {
-            Reservas res = Reservas(auto, cliente);
-            cliente.addReserva(res);
-            contenedores.addReserva(res);
+AdministradorDeReservas::AdministradorDeReservas(string nom, string ap, string mat, int dni) : Empleados(nom, ap, mat, dni) {
+}
+   void AdministradorDeReservas::hacerReserva(Cliente cliente, Automovil auto, string fInicio, string fFinal, float monto, string estadoReser, Contenedores contenedores) {
+            Reservas res = Reservas(cliente, auto, fInicio, fFinal, monto, estadoReser);
+            cliente.agregarReserva(res);
+            contenedores.agregarReserva(res);
         }
 };

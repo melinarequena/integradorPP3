@@ -9,8 +9,8 @@
 class AdministradorDeReservas : Empleados{
 public:
     AdministradorDeReservas(string nom, string ap, string mat, int dni);
-    ~AdministradorDeReservas(){}; //destructor
-    void hacerReserva(Automovil auto, Cliente cliente, Contenedores contenedores);
+    ~AdministradorDeReservas(); //destructor
+    void hacerReserva(Cliente cliente, Automovil auto, string fInicio, string fFinal, float monto, string estadoReser, Contenedores contenedores);
 
 };
 

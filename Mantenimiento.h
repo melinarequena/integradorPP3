@@ -16,11 +16,11 @@ private:
     float costo;
 
 public:
-    Mantenimiento(string fecha, string revision, float costo) {
-        fecha = fecha;
-        tipoRevision = revision;
-        costo = costo;
-    }
+    Mantenimiento(string fecha, string revision, float costo);
+    ~Mantenimiento();
+    string getFecha();
+    string getTipoRevision();
+    float getCosto();
 };
 
 

@@ -4,7 +4,6 @@
 
 #include "Facturas.h"
 #include "Reservas.h"
-Facturas(Reservas reserva, bool cob) {
-    this->reserva = reserva;
-    this->cobro = cob;
-};
+
+Facturas::Facturas(Reservas reserva, bool cob) : reserva(reserva), cobro(cob){
+}

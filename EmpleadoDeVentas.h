@@ -11,7 +11,7 @@ using namespace std;
 class EmpleadoDeVentas : Empleados{
     public:
         EmpleadoDeVentas(string nom, string ap, string mat, int dni);
-        ~EmpleadoDeVentas(){}; //destructor
+        ~EmpleadoDeVentas(); //destructor
         Facturas facturar(Reservas reserva);
 };
 
