@@ -5,6 +5,8 @@
 #ifndef CLIENTE_H
 #define CLIENTE_H
 #include <string>
+#include <vector>
+#include "Reservas.h"
 using namespace std;
 
 class Cliente {
@@ -21,5 +23,6 @@ public:
     ~Cliente(){}; //destructor
     void agregarReserva(const Reservas& reserva);
     vector<Reservas> obtenerHistorialReservas() const;
+    getInfoCliente()const;
     };
 #endif //CLIENTE_H

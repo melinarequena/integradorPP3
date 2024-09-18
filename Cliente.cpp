@@ -20,4 +20,10 @@ void agregarReserva(const Reservas& reserva) {
 vector<Reservas> obtenerHistorialReservas() const {
     return historialReservas;
 }
+getInfoCliente()const{
+    cout<<"Nombre: "<<nombre<<" "<<apellido<<endl;
+    cout<<"DNI: "<< dni<<endl;
+    cout<<"Telefono: "<<telefono;
+    cout<<"Direccion: "<<direccion;
+}
 

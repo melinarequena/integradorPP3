@@ -4,13 +4,13 @@
 
 #ifndef RESERVAS_H
 #define RESERVAS_H
+
 #include <iostream>
 
 #include "Automovil.h"
 #include "Cliente.h"
 #include <string>
 using namespace std;
-
 
 class Reservas {
 private:
@@ -22,16 +22,7 @@ private:
     string estadoReserva;
 
 public:
-    Reservas(Cliente cliente, Automovil automovil, string fInicio, string fFinal, float monto, string estadoReser) {
-        cliente = cliente;
-        automovil = automovil;
-        fechaInicio = fInicio;
-        fechaFinal = fFinal;
-        montoTotal = monto;
-        estadoReserva = estadoReser;
-        cout << "Se ha creado una reserva " << endl;
-    }
-
+    getInfoReservas()const;
 };
 
 #endif //RESERVAS_H
