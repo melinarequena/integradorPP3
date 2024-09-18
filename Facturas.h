@@ -12,10 +12,8 @@ private:
     Reservas reserva;
     bool cobro;
 public:
-    Facturas(Reservas reserva, bool cob) {
-        reserva = reserva;
-        cobro = cob;
-    }
+    Facturas(Reservas reserva, bool cob) {    }
+    ~Facturas(){}; //destructor
 };
 
 
