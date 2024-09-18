@@ -18,14 +18,8 @@ private:
     // hisyorial de resevas (CONTENEDOR DE RESERVAS?)
 
 public:
-    Cliente(string nom, string ape, string dni, string tel, string direc){
-        nombre = nom;
-        apellido = ape;
-        dni = dni;
-        telefono = tel;
-        direccion = direc;
-        cout <<"Se ha creado el cliente: "<<dni<<endl;
-    }
+    Cliente(string nom, string ape, string dni, string tel, string direc); //constructor
+    ~Cliente(){}; //destructor
 };
 
 
