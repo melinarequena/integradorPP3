@@ -13,6 +13,7 @@ private:
     bool cobro;
 public:
     Facturas(Reservas reserva, bool cob) {    }
+    ~Facturas(){}; //destructor
 };
 
 
