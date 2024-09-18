@@ -1,12 +1,15 @@
-//
-// Created by spendice on 9/18/24.
-//
-
+#include "Empleados.h"
+#include "Automovil.h"
+#include "Cliente.h"
+#include "Contenedores.h"
 #ifndef TRABAJOINTEGRADORPP3_ADMINISTRADORDERESERVAS_H
 #define TRABAJOINTEGRADORPP3_ADMINISTRADORDERESERVAS_H
 
 
-class AdministradorDeReservas {
+class AdministradorDeReservas : Empleados{
+public:
+    AdministradorDeReservas(string nom, string ap, string mat, int dni);
+    void hacerReserva(Automovil auto, Cliente cliente, Contenedores contenedores);
 
 };
 

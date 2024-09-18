@@ -64,7 +64,142 @@ build CMakeFiles/trabajoIntegradorPP3.dir/main.cpp.o: CXX_COMPILER__trabajoInteg
   OBJECT_FILE_DIR = CMakeFiles/trabajoIntegradorPP3.dir
   dyndep = CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
 
-build CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd | /home/spendice/CLionProjects/IntegradorPP3/cmake-build-debug/CMakeFiles/trabajoIntegradorPP3.dir/CXXModules.json CMakeFiles/trabajoIntegradorPP3.dir/main.cpp.o.modmap: CXX_DYNDEP__trabajoIntegradorPP3_Debug CMakeFiles/trabajoIntegradorPP3.dir/main.cpp.o.ddi | /home/spendice/CLionProjects/IntegradorPP3/cmake-build-debug/CMakeFiles/trabajoIntegradorPP3.dir/CXXDependInfo.json
+build CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o.ddi: CXX_SCAN__trabajoIntegradorPP3_Debug /home/spendice/CLionProjects/IntegradorPP3/Automovil.cpp || cmake_object_order_depends_target_trabajoIntegradorPP3
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJ_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o.ddi.i
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o: CXX_COMPILER__trabajoIntegradorPP3_scanned_Debug /home/spendice/CLionProjects/IntegradorPP3/Automovil.cpp | CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o.modmap || cmake_object_order_depends_target_trabajoIntegradorPP3 CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  OBJECT_FILE_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  dyndep = CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o.ddi: CXX_SCAN__trabajoIntegradorPP3_Debug /home/spendice/CLionProjects/IntegradorPP3/Cliente.cpp || cmake_object_order_depends_target_trabajoIntegradorPP3
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJ_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o.ddi.i
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o: CXX_COMPILER__trabajoIntegradorPP3_scanned_Debug /home/spendice/CLionProjects/IntegradorPP3/Cliente.cpp | CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o.modmap || cmake_object_order_depends_target_trabajoIntegradorPP3 CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  OBJECT_FILE_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  dyndep = CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o.ddi: CXX_SCAN__trabajoIntegradorPP3_Debug /home/spendice/CLionProjects/IntegradorPP3/Empleados.cpp || cmake_object_order_depends_target_trabajoIntegradorPP3
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJ_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o.ddi.i
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o: CXX_COMPILER__trabajoIntegradorPP3_scanned_Debug /home/spendice/CLionProjects/IntegradorPP3/Empleados.cpp | CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o.modmap || cmake_object_order_depends_target_trabajoIntegradorPP3 CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  OBJECT_FILE_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  dyndep = CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o.ddi: CXX_SCAN__trabajoIntegradorPP3_Debug /home/spendice/CLionProjects/IntegradorPP3/Reservas.cpp || cmake_object_order_depends_target_trabajoIntegradorPP3
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJ_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o.ddi.i
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o: CXX_COMPILER__trabajoIntegradorPP3_scanned_Debug /home/spendice/CLionProjects/IntegradorPP3/Reservas.cpp | CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o.modmap || cmake_object_order_depends_target_trabajoIntegradorPP3 CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  OBJECT_FILE_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  dyndep = CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o.ddi: CXX_SCAN__trabajoIntegradorPP3_Debug /home/spendice/CLionProjects/IntegradorPP3/Facturas.cpp || cmake_object_order_depends_target_trabajoIntegradorPP3
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJ_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o.ddi.i
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o: CXX_COMPILER__trabajoIntegradorPP3_scanned_Debug /home/spendice/CLionProjects/IntegradorPP3/Facturas.cpp | CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o.modmap || cmake_object_order_depends_target_trabajoIntegradorPP3 CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  OBJECT_FILE_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  dyndep = CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o.ddi: CXX_SCAN__trabajoIntegradorPP3_Debug /home/spendice/CLionProjects/IntegradorPP3/Mantenimiento.cpp || cmake_object_order_depends_target_trabajoIntegradorPP3
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJ_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o.ddi.i
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o: CXX_COMPILER__trabajoIntegradorPP3_scanned_Debug /home/spendice/CLionProjects/IntegradorPP3/Mantenimiento.cpp | CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o.modmap || cmake_object_order_depends_target_trabajoIntegradorPP3 CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  OBJECT_FILE_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  dyndep = CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o.ddi: CXX_SCAN__trabajoIntegradorPP3_Debug /home/spendice/CLionProjects/IntegradorPP3/Contenedores.cpp || cmake_object_order_depends_target_trabajoIntegradorPP3
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJ_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o.ddi.i
+
+build CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o: CXX_COMPILER__trabajoIntegradorPP3_scanned_Debug /home/spendice/CLionProjects/IntegradorPP3/Contenedores.cpp | CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o.modmap || cmake_object_order_depends_target_trabajoIntegradorPP3 CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  OBJECT_FILE_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  dyndep = CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+
+build CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o.ddi: CXX_SCAN__trabajoIntegradorPP3_Debug /home/spendice/CLionProjects/IntegradorPP3/AdministradorDeReservas.cpp || cmake_object_order_depends_target_trabajoIntegradorPP3
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJ_FILE = CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o.ddi.i
+
+build CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o: CXX_COMPILER__trabajoIntegradorPP3_scanned_Debug /home/spendice/CLionProjects/IntegradorPP3/AdministradorDeReservas.cpp | CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o.modmap || cmake_object_order_depends_target_trabajoIntegradorPP3 CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  OBJECT_FILE_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  dyndep = CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+
+build CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o.ddi: CXX_SCAN__trabajoIntegradorPP3_Debug /home/spendice/CLionProjects/IntegradorPP3/EmpleadoDeVentas.cpp || cmake_object_order_depends_target_trabajoIntegradorPP3
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJ_FILE = CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o.ddi.i
+
+build CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o: CXX_COMPILER__trabajoIntegradorPP3_scanned_Debug /home/spendice/CLionProjects/IntegradorPP3/EmpleadoDeVentas.cpp | CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o.modmap || cmake_object_order_depends_target_trabajoIntegradorPP3 CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+  DEP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  OBJECT_FILE_DIR = CMakeFiles/trabajoIntegradorPP3.dir
+  dyndep = CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd
+
+build CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd | /home/spendice/CLionProjects/IntegradorPP3/cmake-build-debug/CMakeFiles/trabajoIntegradorPP3.dir/CXXModules.json CMakeFiles/trabajoIntegradorPP3.dir/main.cpp.o.modmap CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o.modmap CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o.modmap CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o.modmap CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o.modmap CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o.modmap CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o.modmap CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o.modmap CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o.modmap CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o.modmap: CXX_DYNDEP__trabajoIntegradorPP3_Debug CMakeFiles/trabajoIntegradorPP3.dir/main.cpp.o.ddi CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o.ddi CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o.ddi CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o.ddi CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o.ddi CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o.ddi CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o.ddi CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o.ddi CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o.ddi CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o.ddi | /home/spendice/CLionProjects/IntegradorPP3/cmake-build-debug/CMakeFiles/trabajoIntegradorPP3.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -74,7 +209,7 @@ build CMakeFiles/trabajoIntegradorPP3.dir/CXX.dd | /home/spendice/CLionProjects/
 #############################################
 # Link the executable trabajoIntegradorPP3
 
-build trabajoIntegradorPP3: CXX_EXECUTABLE_LINKER__trabajoIntegradorPP3_Debug CMakeFiles/trabajoIntegradorPP3.dir/main.cpp.o
+build trabajoIntegradorPP3: CXX_EXECUTABLE_LINKER__trabajoIntegradorPP3_Debug CMakeFiles/trabajoIntegradorPP3.dir/main.cpp.o CMakeFiles/trabajoIntegradorPP3.dir/Automovil.cpp.o CMakeFiles/trabajoIntegradorPP3.dir/Cliente.cpp.o CMakeFiles/trabajoIntegradorPP3.dir/Empleados.cpp.o CMakeFiles/trabajoIntegradorPP3.dir/Reservas.cpp.o CMakeFiles/trabajoIntegradorPP3.dir/Facturas.cpp.o CMakeFiles/trabajoIntegradorPP3.dir/Mantenimiento.cpp.o CMakeFiles/trabajoIntegradorPP3.dir/Contenedores.cpp.o CMakeFiles/trabajoIntegradorPP3.dir/AdministradorDeReservas.cpp.o CMakeFiles/trabajoIntegradorPP3.dir/EmpleadoDeVentas.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/trabajoIntegradorPP3.dir
   POST_BUILD = :
