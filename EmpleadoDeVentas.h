@@ -1,0 +1,14 @@
+//
+// Created by spendice on 9/18/24.
+//
+
+#ifndef TRABAJOINTEGRADORPP3_EMPLEADODEVENTAS_H
+#define TRABAJOINTEGRADORPP3_EMPLEADODEVENTAS_H
+
+
+class EmpleadoDeVentas {
+
+};
+
+
+#endif //TRABAJOINTEGRADORPP3_EMPLEADODEVENTAS_H
