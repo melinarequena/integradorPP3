@@ -7,6 +7,8 @@
 #include "Automovil.h"
 #include <string>
 
+#include "Mantenimiento.h"
+
 using namespace std;
 
 class Automovil {
@@ -16,57 +18,31 @@ protected:
     string matricula;
     string combustible;
     float precioAlquiler;
-    bool disponiblidad;
+    bool disponibilidad;
     Mantenimiento mantenimiento;
 
 public:
-    Automovil(string marca, string modelo, string matricula, string combustible, float precio, bool disponibilidad,Mantenimiento m) {
-        marca = marca;
-        modelo = modelo;
-        matricula = matricula;
-        combustible = combustible;
-        precioAlquiler = precio;
-        disponiblidad = disponibilidad;
-        mantenimiento = m;
-    }
+    Automovil(string marca, string modelo, string matricula, string combustible, float precio, bool disponibilidad,Mantenimiento m);
+    ~Automovil();
 };
 
+
 class Sedan : public Automovil {
-public:
-    Sedan (string marc, string mod, string matr, string comb, float pre, bool disp, Mantenimiento m) {
-        marca = marc;
-        modelo = mod;
-        matricula = matr;
-        combustible = comb;
-        precioAlquiler = pre;
-        disponiblidad = disp;
-        mantenimiento = m;
-    }
-
-    class SUV : public Automovil {
     public:
-        SUV(string marc, string mod, string matr, string comb, float pre, bool disp, Mantenimiento m) {
-            marca = marc;
-            modelo = mod;
-            matricula = matr;
-            combustible = comb;
-            precioAlquiler = pre;
-            disponiblidad = disp;
-            mantenimiento = m;
-        }
-    }
+        Sedan (string marc, string mod, string matr, string comb, float pre, bool disp, Mantenimiento m);
+        ~Sedan();
+    };
 
-    class Camioneta : public Automovil {
+class SUV : public Automovil {
     public:
-        Camioneta(string marc, string mod, string matr, string comb, float pre, bool disp, Mantenimiento m) {
-            marca = marc;
-            modelo = mod;
-            matricula = matr;
-            combustible = comb;
-            precioAlquiler = pre;
-            disponiblidad = disp;
-            mantenimiento = m;
-        }
+        SUV(string marc, string mod, string matr, string comb, float pre, bool disp, Mantenimiento m);
+        ~SUV();
+    };
+
+class Camioneta : public Automovil {
+    public:
+        Camioneta(string marc, string mod, string matr, string comb, float pre, bool disp, Mantenimiento m);
+        ~Camioneta();
     };
 
 
