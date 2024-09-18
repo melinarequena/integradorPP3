@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 
@@ -160,9 +161,13 @@ public:
 
 class Contenedores {
     private:
+    vector<Automovil*> listadoAutomoviles;
+    vector<Cliente*> listadoClientes;
+    vector<Reservas*> listadoReservas;
     // vector vehiculos
     // vector clientes
     // vector reservas
+
 };
 
 
