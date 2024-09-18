@@ -14,14 +14,12 @@ private:
     string dni;
     string telefono;
     string direccion;
-
-    // hisyorial de resevas (CONTENEDOR DE RESERVAS?)
+    vector<Reservas> historialReservas;
 
 public:
     Cliente(string nom, string ape, string dni, string tel, string direc); //constructor
     ~Cliente(){}; //destructor
-};
-
-
-
+    void agregarReserva(const Reservas& reserva);
+    vector<Reservas> obtenerHistorialReservas() const;
+    };
 #endif //CLIENTE_H
