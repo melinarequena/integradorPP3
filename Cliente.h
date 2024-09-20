@@ -16,13 +16,22 @@ private:
     string dni;
     string telefono;
     string direccion;
+
     vector<Reservas> historialReservas;
 
 public:
     Cliente(string nom, string ape, string dni, string tel, string direc); //constructor
-    ~Cliente(){}; //destructor
-    void agregarReserva(const Reservas& reserva);
-    vector<Reservas> obtenerHistorialReservas() const;
-    getInfoCliente()const;
+    ~Cliente(); //destructor
+
+    void agregarReserva(const Reservas * reserva);
+
+    void verReservas();
+
+    //vector<Reservas> obtenerHistorialReservas() const;
+
+    void getInfo()const;
+
+
+
     };
 #endif //CLIENTE_H

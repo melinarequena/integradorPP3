@@ -3,6 +3,7 @@
 //
 
 #include "Contenedores.h"
+#include "Reservas.h"
 
 #include <vector>
 
@@ -35,11 +36,13 @@ void Contenedores::verListAutomoviles() {
 void Contenedores::verListClientes() {
     for(Cliente * cliente : listadoClientes) {
         cliente->getInfo();
+    }
 }
 
 void Contenedores::verListReservas() {
     for(Reservas * reservas : listadoReservas) {
         reservas->getInfo();
+    }
 }
 
 

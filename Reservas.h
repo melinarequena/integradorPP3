@@ -22,7 +22,9 @@ private:
     string estadoReserva;
 
 public:
-    getInfoReservas()const;
+    Reservas(const Cliente& cli, const Automovil& autom, string fechaInic, float montoTot ,string fechaFin, string estadoRes);
+    void getInfo() const;
 };
+
 
 #endif //RESERVAS_H

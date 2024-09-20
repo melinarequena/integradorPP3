@@ -17,7 +17,7 @@ string Automovil::getMatricula() {
     return matricula;
 }
 
-void Automovil::getInfo() {
+void Automovil::getInfo() const {
     cout << "\n\nMarca: " << marca << "Modelo: " << modelo << "Matricula: " << matricula << "Combustible: " << combustible << "Precio por hora: " << precioAlquiler <<endl;
     if (disponibilidad) {
         cout << "Dispobible\n\n" << endl;

@@ -4,22 +4,21 @@
 
 #include "Reservas.h"
 #include "Cliente.h"
-#include "Cliente.cpp"
-//constructor
-Reservas(Cliente cliente, Automovil automovil, string fInicio, string fFinal, float monto, string estadoReser) {
-cliente = cliente;
-automovil = automovil;
-fechaInicio = fInicio;
-fechaFinal = fFinal;
-montoTotal = monto;
-estadoReserva = estadoReser;
-cout << "Se ha creado una reserva " << endl;
-}
 
-getInfoReservas()const{
-    getInfoCliente();
-    cout<<"Vehiculo: "<< automovil<<endl;
-    cout<<"Fecha de inicio: "<<fechaInicio<<" Fecha Final: "<<fechaFinal<<endl;
-    cout<<"Monto: "<<montoTotal;
-    cout<<"Estado de reserva: "<<estadoReserva<<endl;
+using namespace std;
+
+//constructor
+Reservas::Reservas(const Cliente& cli, const Automovil& autom, string fechaInic, float montoTot, string fechaFin, string estadoRes)
+        : cliente(cli), automovil(autom), fechaInicio(fechaInic), montoTotal(montoTot), fechaFinal(fechaFin), estadoReserva(estadoRes) {}
+
+
+
+void Reservas::getInfo() const {
+    cliente.getInfo();
+    automovil.getInfo();
+    cout << "Fecha inicio: " << fechaInicio << endl;
+    cout << "Fecha fin: " << fechaFinal << endl;
+    cout << "Monto: " << montoTotal << endl;
+    cout << "Estado de reserva: " << estadoReserva << endl;
+
 }
