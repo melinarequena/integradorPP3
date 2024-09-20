@@ -17,13 +17,13 @@ private:
     string telefono;
     string direccion;
 
-    vector<Reservas> historialReservas;
+    vector<Reservas *> historialReservas;
 
 public:
     Cliente(string nom, string ape, string dni, string tel, string direc); //constructor
     ~Cliente(); //destructor
 
-    void agregarReserva(const Reservas * reserva);
+    void agregarReserva(Reservas * reserva);
 
     void verReservas();
 

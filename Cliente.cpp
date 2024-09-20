@@ -3,6 +3,7 @@
 //
 //constructor cliente
 #include "Cliente.h"
+#include "Reservas.h"
 #include<iostream>
 #include <ostream>
 
@@ -15,14 +16,14 @@ Cliente::~Cliente() {
     cout << "Se ha destruido un cliente" << endl;
 }
 
-void Cliente::agregarReserva(const Reservas * reserva) {
+void Cliente::agregarReserva(Reservas * reserva) {
     historialReservas.push_back(reserva);
     cout << "Se ha agregado una nueva reserva para el cliente: " << dni << endl;
 }
 
 void Cliente::verReservas() {
     for(Reservas * reserva : historialReservas) {
-        cout << reserva->getInfoReservas() << endl;
+        reserva->getInfo();
     }
 }
 
