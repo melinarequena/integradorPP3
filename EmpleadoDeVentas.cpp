@@ -6,8 +6,11 @@
 #include "Facturas.h"
 #include "Reservas.h"
 using namespace std;
-EmpleadoDeVentas::EmpleadoDeVentas(string nom, string ap, string mat, int dni) : Empleados(nom, ap, mat, dni) {
+
+EmpleadoDeVentas::EmpleadoDeVentas(string nom, string ap, string mat, int dni)
+: Empleados(nom, ap, mat, dni) {
 }
+
 Facturas EmpleadoDeVentas::facturar(Reservas reserva){
     Facturas factura = new Facturas(reserva);
     return factura;

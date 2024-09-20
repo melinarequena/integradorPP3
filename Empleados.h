@@ -15,7 +15,7 @@ private:
     string nombre;
     string apellido;
     string matricula;
-    int dni;
+    string dni;
 
     /*Los empleados deben tener roles (administradores, empleados
     de ventas
@@ -24,7 +24,8 @@ private:
     de reservas y la actualización de inventario
     .*/
 public:
-    Empleados(string nom, string ap, string mat, int dni) {}
+    Empleados(string nom, string ap, string mat, string dni);
+    ~Empleados();
 };
 
 #endif //EMPLEADOS_H
