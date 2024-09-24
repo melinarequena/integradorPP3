@@ -28,10 +28,6 @@ void Cliente::verReservas() {
 }
 
 
-    /*// obtener el historial de reservas
-    vector<Reservas> obtenerHistorialReservas() const {
-        return historialReservas;
-    }*/
 
 void Cliente::getInfo() const {
     cout << "Cliente:" << endl;
