@@ -11,7 +11,7 @@ using namespace std;
 
 
 class Empleados {
-private:
+protected:
     string nombre;
     string apellido;
     string matricula;
