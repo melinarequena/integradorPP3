@@ -26,6 +26,7 @@ public:
     ~Automovil();
     string getMatricula();
     void getInfo () const;
+    float getPrecio();
 };
 
 

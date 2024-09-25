@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <chrono>
 
 #include "Automovil.h"
 #include "Cliente.h"
@@ -19,8 +20,9 @@ int main() {
     pablo->getInfo();
     AdministradorDeReservas admin = AdministradorDeReservas("Juan", "Perez", "1234", "1234");
     Mantenimiento mantenimiento = Mantenimiento("5/2/20", "Completo", 1000);
-    Automovil auto1 = Automovil("Toyota", "Corolla", "1234", "Nafta", 10000, true, mantenimiento);
-    Reservas reserva = Reservas(pablo, auto1, "5/2/20", 1000, "10/2/20", "Pendiente");
+    Camioneta auto1 = Camioneta("Toyota", "Corolla", "1234", "Nafta", 500, true, mantenimiento);
+    Contenedores contenedores = Contenedores();
+    admin.hacerReserva(pablo, auto1, chrono::year_month_day(chrono::year(2020), chrono::month(1), chrono::day(15)), chrono::year_month_day(chrono::year(2020), chrono::month(2), chrono::day(7)), "Reservado", contenedores);
 
     return 0;
-}
+        }

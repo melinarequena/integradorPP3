@@ -29,6 +29,9 @@ void Automovil::getInfo() const {
         cout << "No disponible\n\n" << endl;
     }
 }
+float Automovil::getPrecio() {
+    return precioAlquiler;
+}
 
 // Constructor de Sedan
 Sedan::Sedan(string marca, string modelo, string matricula, string combustible, float precio, bool disponibilidad, Mantenimiento m)

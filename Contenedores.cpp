@@ -7,6 +7,20 @@
 
 #include <vector>
 
+Contenedores::Contenedores() {
+}
+Contenedores::~Contenedores() {
+    for(Automovil * automovil : listadoAutomoviles) {
+        delete automovil;
+    }
+    for(Cliente * cliente : listadoClientes) {
+        delete cliente;
+    }
+    for(Reservas * reserva : listadoReservas) {
+        delete reserva;
+    }
+}
+
 void Contenedores::agregarAutomovil(Automovil * automovil) {
     listadoAutomoviles.push_back(automovil);
 }

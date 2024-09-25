@@ -4,12 +4,17 @@
 
 #include "Reservas.h"
 #include "Cliente.h"
+#include <chrono>
 
 using namespace std;
 
 //constructor
-Reservas::Reservas(Cliente *cli, Automovil autom, string fechaInic, float montoTot, string fechaFin, string estadoRes)
-        : cliente(cli), automovil(autom), fechaInicio(fechaInic), montoTotal(montoTot), fechaFinal(fechaFin), estadoReserva(estadoRes) {}
+Reservas::Reservas(Cliente *cli, Automovil autom, chrono::year_month_day fechaInic, chrono::year_month_day fechaFin, string estadoRes)
+        : cliente(cli), automovil(autom), fechaInicio(fechaInic), fechaFinal(fechaFin), estadoReserva(estadoRes) {
+    auto sys_fechaInicio = chrono::sys_days{fechaInicio};
+    auto sys_fechaFinal = chrono::sys_days{fechaFinal};
+    montoTotal = chrono::duration_cast<chrono::days>(sys_fechaFinal - sys_fechaInicio).count() * automovil.getPrecio();
+}
 
 
 
