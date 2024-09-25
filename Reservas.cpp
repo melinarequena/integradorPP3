@@ -8,13 +8,13 @@
 using namespace std;
 
 //constructor
-Reservas::Reservas(const Cliente& cli, const Automovil& autom, string fechaInic, float montoTot, string fechaFin, string estadoRes)
+Reservas::Reservas(Cliente *cli, Automovil autom, string fechaInic, float montoTot, string fechaFin, string estadoRes)
         : cliente(cli), automovil(autom), fechaInicio(fechaInic), montoTotal(montoTot), fechaFinal(fechaFin), estadoReserva(estadoRes) {}
 
 
 
 void Reservas::getInfo() const {
-    cliente.getInfo();
+    cliente->getInfo();
     automovil.getInfo();
     cout << "Fecha inicio: " << fechaInicio << endl;
     cout << "Fecha fin: " << fechaFinal << endl;

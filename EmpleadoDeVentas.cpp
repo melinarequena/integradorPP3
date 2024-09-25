@@ -7,7 +7,7 @@
 #include "Reservas.h"
 using namespace std;
 
-EmpleadoDeVentas::EmpleadoDeVentas(string nom, string ap, string mat, int dni)
+EmpleadoDeVentas::EmpleadoDeVentas(string nom, string ap, string mat, string dni)
 : Empleados(nom, ap, mat, dni) {
 }
 

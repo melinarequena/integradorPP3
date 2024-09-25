@@ -6,15 +6,13 @@
 #define RESERVAS_H
 
 #include <iostream>
-
 #include "Automovil.h"
-#include "Cliente.h"
 #include <string>
 using namespace std;
-
+class Cliente;
 class Reservas {
 private:
-    Cliente cliente;
+    Cliente *cliente;
     Automovil automovil;
     string fechaInicio;
     string fechaFinal;
@@ -22,7 +20,7 @@ private:
     string estadoReserva;
 
 public:
-    Reservas(const Cliente& cli, const Automovil& autom, string fechaInic, float montoTot ,string fechaFin, string estadoRes);
+    Reservas(Cliente *cli, Automovil autom, string fechaInic, float montoTot, string fechaFin, string estadoRes);
     void getInfo() const;
 };
 

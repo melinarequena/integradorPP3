@@ -10,12 +10,15 @@
 #include "Empleados.h"
 using namespace std;
 
-AdministradorDeReservas::AdministradorDeReservas(string nom, string ap, string mat, int dni)
+AdministradorDeReservas::AdministradorDeReservas(string nom, string ap, string mat, string dni)
 : Empleados(nom, ap, mat, dni) {}
 
 
-void AdministradorDeReservas::hacerReserva(Cliente cliente, Automovil car, string fInicio, string fFinal, float monto, string estadoReser, Contenedores contenedores) {
+void AdministradorDeReservas::hacerReserva(Cliente* cliente, Automovil car, string fInicio, string fFinal, float monto, string estadoReser, Contenedores contenedores) {
             Reservas * res = new Reservas(cliente, car, fInicio, monto, fFinal, estadoReser);
-            cliente.agregarReserva(res);
+            cliente->agregarReserva(res);
             contenedores.agregarReserva(res);
-        }
+}
+AdministradorDeReservas::~AdministradorDeReservas() {
+    cout << "Administrador de Reservas eliminado" << endl;
+}

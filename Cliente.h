@@ -8,7 +8,7 @@
 #include <vector>
 #include "Reservas.h"
 using namespace std;
-
+class Reservas;
 class Cliente {
 private:
     string nombre;
