@@ -10,8 +10,11 @@ using namespace std;
 EmpleadoDeVentas::EmpleadoDeVentas(string nom, string ap, string mat, string dni)
 : Empleados(nom, ap, mat, dni) {
 }
+EmpleadoDeVentas::~EmpleadoDeVentas() {
+    cout << "Empleado de ventas eliminado" << endl;
+}
 
-Facturas EmpleadoDeVentas::facturar(Reservas reserva, bool cobrado){
+Facturas EmpleadoDeVentas::facturar(Reservas* reserva, bool cobrado){
     Facturas factura = Facturas(reserva, cobrado);
     return factura;
 }

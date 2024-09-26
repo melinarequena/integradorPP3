@@ -28,6 +28,7 @@ public:
     void verReservas();
 
     void getInfo()const;
+    string getDni();
 
 
 

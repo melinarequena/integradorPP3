@@ -14,15 +14,16 @@ class Cliente;
 class Reservas {
 private:
     Cliente *cliente;
-    Automovil automovil;
+    Automovil* automovil;
     chrono::year_month_day fechaInicio;
     chrono::year_month_day fechaFinal;
     float montoTotal;
     string estadoReserva;
 
 public:
-    Reservas(Cliente *cli, Automovil autom, chrono::year_month_day fechaInic, chrono::year_month_day fechaFin, string estadoRes);
+    Reservas(Cliente *cli, Automovil* autom, chrono::year_month_day fechaInic, chrono::year_month_day fechaFin, string estadoRes);
     void getInfo() const;
+    Cliente* getCliente() const;
 };
 
 

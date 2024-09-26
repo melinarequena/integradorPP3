@@ -34,6 +34,10 @@ class Contenedores {
     void verListClientes();
 
     void verListReservas();
+
+    Cliente* buscarCliente(string dni);
+    Automovil* buscarAutomovil(string matricula);
+    Reservas* buscarReserva(string dni);
 };
 
 

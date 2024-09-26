@@ -9,10 +9,10 @@
 
 class Facturas {
 private:
-    Reservas reserva;
+    Reservas* reserva;
     bool cobro;
 public:
-    Facturas(Reservas reserva, bool cob);
+    Facturas(Reservas* reserva, bool cob);
     ~Facturas(); //destructor
 };
 

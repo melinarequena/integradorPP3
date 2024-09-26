@@ -26,8 +26,9 @@ void Cliente::verReservas() {
         reserva->getInfo();
     }
 }
-
-
+string Cliente::getDni() {
+    return dni;
+}
 
 void Cliente::getInfo() const {
     cout << "Cliente:" << endl;

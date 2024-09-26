@@ -58,6 +58,27 @@ void Contenedores::verListReservas() {
         reservas->getInfo();
     }
 }
+Cliente* Contenedores::buscarCliente(string dni) {
+    for(Cliente * cliente : listadoClientes) {
+        if(cliente->getDni() == dni) {
+            return cliente;
+        }
+    }
+}
+Automovil* Contenedores::buscarAutomovil(string matricula) {
+    for(Automovil * automovil : listadoAutomoviles) {
+        if(automovil->getMatricula() == matricula) {
+            return automovil;
+        }
+    }
+}
+Reservas* Contenedores::buscarReserva(string matricula) {
+    for(Reservas * reserva : listadoReservas) {
+        if(reserva->getCliente()->getDni() == matricula) {
+            return reserva;
+        }
+    }
+}
 
 
 

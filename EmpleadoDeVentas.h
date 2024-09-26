@@ -9,12 +9,12 @@
 
 using namespace std;
 
-class EmpleadoDeVentas : Empleados{
+class EmpleadoDeVentas : public Empleados{
     public:
 
         EmpleadoDeVentas(string nom, string ap, string mat, string dni);
         ~EmpleadoDeVentas(); //destructor
-        Facturas facturar(Reservas reserva, bool cobrado);
+        Facturas facturar(Reservas* reserva, bool cobrado);
 };
 
 
