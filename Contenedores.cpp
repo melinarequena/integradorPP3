@@ -45,17 +45,26 @@ void Contenedores::verListAutomoviles() {
     for(Automovil * automovil : listadoAutomoviles) {
         automovil->getInfo();
     }
+    if(listadoAutomoviles.empty()) {
+        cout << "No hay automoviles registrados" << endl;
+    }
 }
 
 void Contenedores::verListClientes() {
     for(Cliente * cliente : listadoClientes) {
         cliente->getInfo();
     }
+    if(listadoClientes.empty()) {
+        cout << "No hay clientes registrados" << endl;
+    }
 }
 
 void Contenedores::verListReservas() {
     for(Reservas * reservas : listadoReservas) {
         reservas->getInfo();
+    }
+    if(listadoReservas.empty()) {
+        cout << "No hay reservas registradas" << endl;
     }
 }
 Cliente* Contenedores::buscarCliente(string dni) {
@@ -64,6 +73,8 @@ Cliente* Contenedores::buscarCliente(string dni) {
             return cliente;
         }
     }
+    cout << "Cliente no encontrado" << endl;
+    return nullptr;
 }
 Automovil* Contenedores::buscarAutomovil(string matricula) {
     for(Automovil * automovil : listadoAutomoviles) {
@@ -71,6 +82,8 @@ Automovil* Contenedores::buscarAutomovil(string matricula) {
             return automovil;
         }
     }
+    cout << "Automovil no encontrado" << endl;
+    return nullptr;
 }
 Reservas* Contenedores::buscarReserva(string matricula) {
     for(Reservas * reserva : listadoReservas) {
@@ -78,6 +91,8 @@ Reservas* Contenedores::buscarReserva(string matricula) {
             return reserva;
         }
     }
+    cout << "Reserva no encontrada" << endl;
+    return nullptr;
 }
 
 

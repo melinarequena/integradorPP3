@@ -13,8 +13,62 @@
 #include "EmpleadoDeVentas.h"
 #include "Mantenimiento.h"
 using namespace std;
-
-
+void addAuto(Empleados* admin, Contenedores DB){
+    cout << "Ingrese por favor los datos del auto" << endl;
+    cout << "Marca: " << endl;
+    string marca;
+    cin >> marca;
+    cout << "Modelo: " << endl;
+    string modelo;
+    cin >> modelo;
+    cout << "Matricula: " << endl;
+    string matricula;
+    cin >> matricula;
+    cout << "Combustible: " << endl;
+    string combustible;
+    cin >> combustible;
+    cout << "Precio por dia: " << endl;
+    float precio;
+    cin >> precio;
+    cout << "Disponibilidad: " << endl;
+    bool disponibilidad;
+    string temp;
+    cin >> temp;
+    if(temp == "true" || temp == "True" || temp == "TRUE" || temp == "Verdadero" || temp == "verdadero" || temp == "VERDADERO" || temp == "1" || temp == "si" || temp == "Si" || temp == "SI" || temp == "S" || temp == "s" || temp == "y" || temp == "Y" || temp == "yes" || temp == "Yes" || temp == "YES" || temp == "ok" || temp == "Ok" || temp == "OK")
+        disponibilidad = true;
+    else
+        disponibilidad = false;
+    cout << "Fecha de mantenimiento: " << endl;
+    string fecha;
+    cin >> fecha;
+    cout << "Tipo de mantenimiento: " << endl;
+    string tipo;
+    cin >> tipo;
+    cout << "Costo de mantenimiento: " << endl;
+    float costo;
+    cin >> costo;
+    Mantenimiento mantenimiento = Mantenimiento(fecha, tipo, costo);
+    admin->addAutomovil(marca, modelo, matricula, combustible, precio, disponibilidad, mantenimiento,DB);
+}
+void agregarCliente(Empleados* admin, Contenedores DB){
+    cout << "Ingrese por favor los datos del cliente: ";
+    cout << "Nombre: ";
+    string nombre;
+    cin >> nombre;
+    cout << "Apellido: ";
+    string apellido;
+    cin >> apellido;
+    cout << "DNI: ";
+    string dni;
+    cin >> dni;
+    cout << "Telefono: ";
+    string telefono;
+    cin >> telefono;
+    cout << "Direccion: ";
+    string direccion;
+    cin >> direccion;
+    admin->addCliente(nombre, apellido, dni, telefono, direccion, DB);
+}
 int main() {
 /*    Cliente * pablo = new Cliente("Pablo", "Gomez", "12398422", "8129-9182", "Aca a la vuelta");
     pablo->getInfo();
@@ -27,8 +81,8 @@ int main() {
     contenedores.verListClientes();*/
     bool exit = false;
     Contenedores DB = Contenedores();
-    AdministradorDeReservas admin = AdministradorDeReservas("Juan", "Perez", "1234", "1234");
-    EmpleadoDeVentas ventas = EmpleadoDeVentas("Pedro", "Gomez", "5678", "5678");
+    AdministradorDeReservas* admin = new AdministradorDeReservas("Juan", "Perez", "1234", "1234");
+    EmpleadoDeVentas* ventas = new EmpleadoDeVentas("Pedro", "Gomez", "5678", "5678");
     cout<<"Bienvenido al sistema de alquiler de autos"<<endl;
     cout<<"Por favor, seleccione un usuario: "<<endl;
     cout<<"1. Administrador de Reservas"<<endl;
@@ -40,6 +94,7 @@ int main() {
         case 1:
             while(!exit)
             {
+            cout<<endl;
             cout<<"Seleccione lo que quiere hacer: "<<endl;
             cout<<"1. Ver lista de reservas"<<endl;
             cout<<"2. Ver lista de clientes"<<endl;
@@ -62,56 +117,11 @@ int main() {
                     DB.verListAutomoviles();
                     break;
                 case 4:{
-                    cout << "Ingrese por favor los datos del auto" << endl;
-                    cout << "Marca: " << endl;
-                    string marca;
-                    cin >> marca;
-                    cout << "Modelo: " << endl;
-                    string modelo;
-                    cin >> modelo;
-                    cout << "Matricula: " << endl;
-                    string matricula;
-                    cin >> matricula;
-                    cout << "Combustible: " << endl;
-                    string combustible;
-                    cin >> combustible;
-                    cout << "Precio por dia: " << endl;
-                    float precio;
-                    cin >> precio;
-                    cout << "Disponibilidad: " << endl;
-                    bool disponibilidad;
-                    cin >> disponibilidad;
-                    cout << "Fecha de mantenimiento: " << endl;
-                    string fecha;
-                    cin >> fecha;
-                    cout << "Tipo de mantenimiento: " << endl;
-                    string tipo;
-                    cin >> tipo;
-                    cout << "Costo de mantenimiento: " << endl;
-                    float costo;
-                    cin >> costo;
-                    Mantenimiento mantenimiento = Mantenimiento(fecha, tipo, costo);
-                    admin.addAutomovil(marca, modelo, matricula, combustible, precio, disponibilidad, mantenimiento,DB);
+                    addAuto(admin, DB);
                     break;
                 }
                 case 5:{
-                    cout << "Ingrese por favor los datos del cliente: ";
-                    cout << "Nombre: ";
-                    string nombre;
-                    cin >> nombre;
-                    cout << "Apellido: ";
-                    string apellido;
-                    cin >> apellido;
-                    cout << "DNI: ";
-                    string dni;
-                    cin >> dni;
-                    cout << "Telefono: ";
-                    string telefono;
-                    cin >> telefono;
-                    cout << "Direccion: ";
-                    string direccion;
-                    cin >> direccion;
-                    admin.addCliente(nombre, apellido, dni, telefono, direccion, DB);
+                    agregarCliente(admin, DB);
                     break;
                 }
                 case 6: {
@@ -133,10 +143,14 @@ int main() {
                     string dni;
                     cin >> dni;
                     Cliente * cliente = DB.buscarCliente(dni);
+                    if(cliente == nullptr)
+                        break;
                     cout << "Ingrese la matricula del auto que desea reservar: " << endl;
                     string matricula;
                     cin >> matricula;
                     Automovil * autom = DB.buscarAutomovil(matricula);
+                    if(autom == nullptr)
+                        break;
                     cout << "Ingrese la fecha de inicio de la reserva: " << endl;
                     cout<<"Año: ";
                     int year;
@@ -159,7 +173,7 @@ int main() {
                     cout << "Ingrese el estado de la reserva: " << endl;
                     string estado;
                     cin >> estado;
-                    admin.hacerReserva(cliente, autom, fechaInicio, fechaFin, estado, DB);
+                    admin->hacerReserva(cliente, autom, fechaInicio, fechaFin, estado, DB);
                     break;
                 }
                 case 9:
@@ -169,6 +183,7 @@ int main() {
             }
         case 2:
             while(!exit) {
+                cout << endl;
                 cout << "Seleccione lo que quiere hacer: " << endl;
                 cout << "1. Ver lista de reservas" << endl;
                 cout << "2. Ver lista de clientes" << endl;
@@ -191,56 +206,11 @@ int main() {
                         DB.verListAutomoviles();
                         break;
                     case 4:{
-                        cout << "Ingrese por favor los datos del auto" << endl;
-                        cout << "Marca: " << endl;
-                        string marca;
-                        cin >> marca;
-                        cout << "Modelo: " << endl;
-                        string modelo;
-                        cin >> modelo;
-                        cout << "Matricula: " << endl;
-                        string matricula;
-                        cin >> matricula;
-                        cout << "Combustible: " << endl;
-                        string combustible;
-                        cin >> combustible;
-                        cout << "Precio por dia: " << endl;
-                        float precio;
-                        cin >> precio;
-                        cout << "Disponibilidad: " << endl;
-                        bool disponibilidad;
-                        cin >> disponibilidad;
-                        cout << "Fecha de mantenimiento: " << endl;
-                        string fecha;
-                        cin >> fecha;
-                        cout << "Tipo de mantenimiento: " << endl;
-                        string tipo;
-                        cin >> tipo;
-                        cout << "Costo de mantenimiento: " << endl;
-                        float costo;
-                        cin >> costo;
-                        Mantenimiento mantenimiento = Mantenimiento(fecha, tipo, costo);
-                        ventas.addAutomovil(marca, modelo, matricula, combustible, precio, disponibilidad, mantenimiento,DB);
+                        addAuto(ventas, DB);
                         break;
                     }
                     case 5:{
-                        cout << "Ingrese por favor los datos del cliente: ";
-                        cout << "Nombre: ";
-                        string nombre;
-                        cin >> nombre;
-                        cout << "Apellido: ";
-                        string apellido;
-                        cin >> apellido;
-                        cout << "DNI: ";
-                        string dni;
-                        cin >> dni;
-                        cout << "Telefono: ";
-                        string telefono;
-                        cin >> telefono;
-                        cout << "Direccion: ";
-                        string direccion;
-                        cin >> direccion;
-                        ventas.addCliente(nombre, apellido, dni, telefono, direccion, DB);
+                        agregarCliente(ventas, DB);
                         break;
                     }
                     case 6: {
@@ -261,7 +231,10 @@ int main() {
                         cout<<"Ingrese el DNI del cliente cuya reserva desea facturar: "<<endl;
                         string dni;
                         cin >> dni;
-                        ventas.facturar(DB.buscarReserva(dni), true);
+                        Reservas * reserva = DB.buscarReserva(dni);
+                        if(reserva == nullptr)
+                            break;
+                        ventas->facturar(reserva, true);
                         break;
                     }
                     case 9:
