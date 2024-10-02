@@ -32,11 +32,36 @@ void Contenedores::agregarCliente(Cliente * cliente) {
 void Contenedores::agregarReserva(Reservas * reserva) {
     listadoReservas.push_back(reserva);
 }
+void Contenedores::agregarEmpleado(Empleados *empleado) {
+    listadoEmpleados.push_back(empleado);
+}
 
 void Contenedores::eliminarAutomovil(string matric) {
-    for(Automovil * recorredor : listadoAutomoviles) {
-        if(recorredor->getMatricula() == matric) {
-            delete recorredor;
+    for(auto it = listadoAutomoviles.begin(); it != listadoAutomoviles.end(); ++it) {
+        if((*it)->getMatricula() == matric) {
+            delete *it;
+            listadoAutomoviles.erase(it);
+            break;
+        }
+    }
+}
+
+void Contenedores::eliminarEmpleado(string matricula) {
+    for(auto it = listadoEmpleados.begin(); it != listadoEmpleados.end(); ++it) {
+        if((*it)->getMatricula() == matricula) {
+            delete *it;
+            listadoEmpleados.erase(it);
+            break;
+        }
+    }
+}
+
+void Contenedores::eliminarCliente(string dni) {
+    for(auto it = listadoClientes.begin(); it != listadoClientes.end(); ++it) {
+        if((*it)->getDni() == dni) {
+            delete *it;
+            listadoClientes.erase(it);
+            break;
         }
     }
 }
@@ -67,6 +92,15 @@ void Contenedores::verListReservas() {
         cout << "No hay reservas registradas" << endl;
     }
 }
+void Contenedores::verListEmpleados() {
+    for(Empleados * empleado : listadoEmpleados) {
+        empleado->getInfo();
+    }
+    if(listadoEmpleados.empty()) {
+        cout << "No hay empleados registrados" << endl;
+    }
+}
+
 Cliente* Contenedores::buscarCliente(string dni) {
     for(Cliente * cliente : listadoClientes) {
         if(cliente->getDni() == dni) {
@@ -94,7 +128,15 @@ Reservas* Contenedores::buscarReserva(string matricula) {
     cout << "Reserva no encontrada" << endl;
     return nullptr;
 }
-
+Empleados* Contenedores::buscarEmpleado(string matricula) {
+    for(Empleados * empleado : listadoEmpleados) {
+        if(empleado->getMatricula() == matricula) {
+            return empleado;
+        }
+    }
+    cout << "Empleado no encontrado" << endl;
+    return nullptr;
+}
 
 
 

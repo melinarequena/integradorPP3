@@ -5,8 +5,6 @@
 #ifndef EMPLEADOS_H
 #define EMPLEADOS_H
 #include <string>
-#include "Contenedores.h"
-
 using namespace std;
 
 
@@ -26,9 +24,9 @@ protected:
     .*/
 public:
     Empleados(string nom, string ap, string mat, string dni);
-    ~Empleados();
-    virtual void addCliente(string n, string a, string d, string t, string dire, Contenedores c);
-    virtual void addAutomovil(string marca, string modelo, string matricula, string combustible, float precio, bool disponibilidad, Mantenimiento m, Contenedores c);
+    virtual ~Empleados();
+    string getMatricula();
+    void getInfo() const;
 };
 
 #endif //EMPLEADOS_H
