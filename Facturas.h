@@ -11,9 +11,11 @@ class Facturas {
 private:
     Reservas* reserva;
     bool cobro;
+    static int numFacturas;
 public:
     Facturas(Reservas* reserva, bool cob);
     ~Facturas(); //destructor
+    static int getNumFacturas();
 };
 
 
