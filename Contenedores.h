@@ -39,7 +39,7 @@ class Contenedores {
 
     Cliente* buscarCliente(string dni);
     Automovil* buscarAutomovil(string matricula);
-    Reservas* buscarReserva(string dni);
+    Reservas* buscarReserva(string dni, chrono::year_month_day fechaInicio);
     Empleados* buscarEmpleado(string matricula);
 };
 

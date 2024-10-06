@@ -5,6 +5,8 @@
 #include "Facturas.h"
 #include "Reservas.h"
 
+int Facturas::numFacturas = 0;
+
 Facturas::Facturas(Reservas* reserva, bool cob) : reserva(reserva), cobro(cob){
     numFacturas++;
 }

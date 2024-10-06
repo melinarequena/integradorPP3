@@ -11,6 +11,7 @@
 #include <chrono>
 using namespace std;
 class Cliente;
+class Contenedores;
 class Reservas {
 private:
     Cliente *cliente;
@@ -19,6 +20,8 @@ private:
     chrono::year_month_day fechaFinal;
     float montoTotal;
     string estadoReserva;
+
+    friend class Contenedores;
 
 public:
     Reservas(Cliente *cli, Automovil* autom, chrono::year_month_day fechaInic, chrono::year_month_day fechaFin, string estadoRes);

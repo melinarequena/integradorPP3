@@ -191,13 +191,13 @@ int main() {
                     }
                 }
                 exit = false;
+                break;
             case 2: {
                 cout<<"Ingrese por favor la matricula del Empleado: ";
                 string matricula;
                 cin >> matricula;
                 Empleados * empleado = DB.buscarEmpleado(matricula);
                 if(empleado == nullptr) {
-                    cout<<"Empleado no encontrado"<<endl;
                     break;
                 }
                 if(dynamic_cast<AdministradorDeReservas*>(empleado)){
@@ -253,6 +253,7 @@ int main() {
                         }
                     }
                     exit = false;
+                    break;
                 }
                 else if(dynamic_cast<EmpleadoDeVentas*>(empleado)){
                     EmpleadoDeVentas * ventas = dynamic_cast<EmpleadoDeVentas*>(empleado);
@@ -267,7 +268,18 @@ int main() {
                                 cout<<"Ingrese el DNI del cliente cuya reserva desea facturar: "<<endl;
                                 string dni;
                                 cin >> dni;
-                                Reservas * reserva = DB.buscarReserva(dni);
+                                cout << "Ingrese la fecha de inicio de la reserva: " << endl;
+                                cout<<"Año: ";
+                                int year;
+                                cin >> year;
+                                cout<<"Mes: ";
+                                int month;
+                                cin >> month;
+                                cout<<"Dia: ";
+                                int day;
+                                cin >> day;
+                                chrono::year_month_day fechaInicio = chrono::year_month_day(chrono::year(year), chrono::month(month), chrono::day(day));
+                                Reservas * reserva = DB.buscarReserva(dni, fechaInicio);
                                 if(reserva == nullptr)
                                     break;
                                 ventas->facturar(reserva, true);
@@ -279,6 +291,7 @@ int main() {
                         }
                     }
                     exit = false;
+                    break;
                 }
 
             }

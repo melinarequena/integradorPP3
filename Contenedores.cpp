@@ -119,9 +119,9 @@ Automovil* Contenedores::buscarAutomovil(string matricula) {
     cout << "Automovil no encontrado" << endl;
     return nullptr;
 }
-Reservas* Contenedores::buscarReserva(string matricula) {
+Reservas* Contenedores::buscarReserva(string matricula, chrono::year_month_day fechaInicio) {
     for(Reservas * reserva : listadoReservas) {
-        if(reserva->getCliente()->getDni() == matricula) {
+        if(reserva->getCliente()->getDni() == matricula && reserva->fechaInicio == fechaInicio) {
             return reserva;
         }
     }
