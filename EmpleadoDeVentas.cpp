@@ -14,7 +14,8 @@ EmpleadoDeVentas::~EmpleadoDeVentas() {
     cout << "Empleado de ventas eliminado" << endl;
 }
 
-Facturas EmpleadoDeVentas::facturar(Reservas* reserva, bool cobrado){
-    Facturas factura = Facturas(reserva, cobrado);
+Facturas* EmpleadoDeVentas::facturar(Reservas* reserva, bool cobrado){
+    Facturas* factura = new Facturas(reserva, cobrado);
+    cout << "Se ha generado una factura" << endl;
     return factura;
 }

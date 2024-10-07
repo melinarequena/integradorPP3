@@ -14,7 +14,7 @@ AdministradorDeReservas::AdministradorDeReservas(string nom, string ap, string m
 : Empleados(nom, ap, mat, dni) {}
 
 
-void AdministradorDeReservas::hacerReserva(Cliente* cliente, Automovil* car, chrono::year_month_day fInicio, chrono::year_month_day fFinal, string estadoReser, Contenedores contenedores) {
+void AdministradorDeReservas::hacerReserva(Cliente* cliente, Automovil* car, chrono::year_month_day fInicio, chrono::year_month_day fFinal, string estadoReser, Contenedores& contenedores) {
             Reservas * res = new Reservas(cliente, car, fInicio, fFinal, estadoReser);
             cliente->agregarReserva(res);
             contenedores.agregarReserva(res);

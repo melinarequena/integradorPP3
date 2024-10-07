@@ -279,7 +279,7 @@ int main() {
                                 int day;
                                 cin >> day;
                                 chrono::year_month_day fechaInicio = chrono::year_month_day(chrono::year(year), chrono::month(month), chrono::day(day));
-                                Reservas * reserva = DB.buscarReserva(dni, fechaInicio);
+                                Reservas* reserva = DB.buscarReserva(dni, fechaInicio);
                                 if(reserva == nullptr)
                                     break;
                                 ventas->facturar(reserva, true);

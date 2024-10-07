@@ -14,7 +14,7 @@ class EmpleadoDeVentas : public Empleados{
 
         EmpleadoDeVentas(string nom, string ap, string mat, string dni);
         ~EmpleadoDeVentas(); //destructor
-        Facturas facturar(Reservas* reserva, bool cobrado);
+        Facturas* facturar(Reservas* reserva, bool cobrado);
 };
 
 
