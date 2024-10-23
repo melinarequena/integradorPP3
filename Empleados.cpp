@@ -14,6 +14,12 @@ Empleados::Empleados(string nom, string ap, string mat, string dni)
 Empleados::~Empleados() {
     cout << "Empleado destruido" << endl;
 }
+string Empleados::getNombre() {
+    return nombre;
+}
+string Empleados::getApellido() {
+    return apellido;
+}
 string Empleados::getMatricula() {
     return matricula;
 }

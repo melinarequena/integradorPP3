@@ -25,6 +25,8 @@ protected:
 public:
     Empleados(string nom, string ap, string mat, string dni);
     virtual ~Empleados();
+    string getNombre();
+    string getApellido();
     string getMatricula();
     void getInfo() const;
 };

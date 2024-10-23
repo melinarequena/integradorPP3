@@ -27,7 +27,10 @@ int main() {
     Contenedores DB = Contenedores();
     int choice;
     while(!exit){
+        cout << endl;
+        cout << "--------------------------------------------------------------" << endl;
         cout<<"Bienvenido al sistema de alquiler de autos"<<endl;
+        cout << "--------------------------------------------------------------" << endl;
         cout<<"Por favor, seleccione un usuario: "<<endl;
         cout<<"1. Gestor de Base de Datos"<<endl;
         cout<<"2. Empleado"<<endl;
@@ -37,16 +40,30 @@ int main() {
             case 1:
                 while(!exit) {
                     cout << endl;
+                    cout << "--------------------------------------------------------------" << endl;
                     cout << "Seleccione lo que quiere hacer: " << endl;
+                    cout << "--------------------------------------------------------------" << endl;
+                    cout << endl;
+                    cout << "--------------------------------------------------------------" << endl;
+                    cout << "Generacion de reporte: " << endl;
+                    cout << "--------------------------------------------------------------" << endl;
                     cout << "1. Ver lista de reservas" << endl;
                     cout << "2. Ver lista de clientes" << endl;
                     cout << "3. Ver lista de autos" << endl;
                     cout << "4. Ver lista de empleados" << endl;
                     cout << "5. Ver lista de reservas de un cliente" << endl;
+                    cout << endl;
+                    cout << "--------------------------------------------------------------" << endl;
+                    cout << "Agregado de objetos: " << endl;
+                    cout << "--------------------------------------------------------------" << endl;
                     cout << "6. Agregar auto" << endl;
                     cout << "7. Agregar cliente" << endl;
                     cout << "8. Agregar Administrador de Reservas" << endl;
                     cout << "9. Agregar Empleado de Ventas" << endl;
+                    cout << endl;
+                    cout << "--------------------------------------------------------------" << endl;
+                    cout << "Eliminacion de objetos: " << endl;
+                    cout << "--------------------------------------------------------------" << endl;
                     cout << "10. Eliminar auto" << endl;
                     cout << "11. Eliminar cliente" << endl;
                     cout << "12. Eliminar empleado" << endl;
@@ -66,6 +83,8 @@ int main() {
                             DB.verListEmpleados();
                             break;
                         case 5: {
+                            cout << endl;
+                            cout << "--------------------------------------------------------------" << endl;
                             cout << "Ingrese el DNI del cliente cuyas reseras quiere visualizar" << endl;
                             string dni;
                             cin >> dni;
@@ -73,6 +92,8 @@ int main() {
                             break;
                         }
                         case 6: {
+                            cout << endl;
+                            cout << "--------------------------------------------------------------" << endl;
                             cout << "Ingrese por favor los datos del auto" << endl;
                             cout << "Marca: " << endl;
                             string marca;
@@ -116,6 +137,8 @@ int main() {
                             break;
                         }
                         case 7: {
+                            cout << endl;
+                            cout << "--------------------------------------------------------------" << endl;
                             cout << "Ingrese por favor los datos del cliente: ";
                             cout << "Nombre: ";
                             string nombre;
@@ -137,6 +160,8 @@ int main() {
                             break;
                         }
                         case 8: {
+                            cout << endl;
+                            cout << "--------------------------------------------------------------" << endl;
                             cout << "Ingrese por favor los datos del administrador de reservas: ";
                             cout << "Nombre: ";
                             string nombre;
@@ -155,6 +180,8 @@ int main() {
                             break;
                         }
                         case 9:{
+                            cout << endl;
+                            cout << "--------------------------------------------------------------" << endl;
                             cout << "Ingrese por favor los datos del empleado de ventas: ";
                             cout << "Nombre: ";
                             string nombre;
@@ -173,6 +200,8 @@ int main() {
                             break;
                         }
                         case 10: {
+                            cout << endl;
+                            cout << "--------------------------------------------------------------" << endl;
                             cout << "Ingrese la matricula del auto que desea eliminar: " << endl;
                             string matricula;
                             cin >> matricula;
@@ -180,6 +209,8 @@ int main() {
                             break;
                         }
                         case 11: {
+                            cout << endl;
+                            cout << "--------------------------------------------------------------" << endl;
                             cout << "Ingrese el DNI del cliente que desea eliminar: " << endl;
                             string dni;
                             cin >> dni;
@@ -187,6 +218,8 @@ int main() {
                             break;
                         }
                         case 12: {
+                            cout << endl;
+                            cout << "--------------------------------------------------------------" << endl;
                             cout << "Ingrese la matricula del empleado que desea eliminar: " << endl;
                             string matricula;
                             cin >> matricula;
@@ -201,6 +234,8 @@ int main() {
                 exit = false;
                 break;
             case 2: {
+                cout << endl;
+                cout << "--------------------------------------------------------------" << endl;
                 cout<<"Ingrese por favor la matricula del Empleado: ";
                 string matricula;
                 cin >> matricula;
@@ -212,12 +247,17 @@ int main() {
                     AdministradorDeReservas * admin = dynamic_cast<AdministradorDeReservas*>(empleado);
                     while(!exit){
                         cout<<endl;
+                        cout<<"--------------------------------------------------------------"<<endl;
+                        cout<<"Bienvenido empleado "<<admin->getNombre()<<" "<<admin->getApellido()<<endl;
+                        cout<<"--------------------------------------------------------------"<<endl;
                         cout<<"Seleccione lo que quiere hacer: "<<endl;
                         cout<<"1. Agregar reserva"<<endl;
                         cout<<"2. Salir"<<endl;
                         cin >> choice;
                         switch (choice) {
                             case 1:{
+                                cout << endl;
+                                cout << "--------------------------------------------------------------" << endl;
                                 cout << "Ingrese el DNI del cliente que desea hacer la reserva: " << endl;
                                 string dni;
                                 cin >> dni;
@@ -267,12 +307,17 @@ int main() {
                     EmpleadoDeVentas * ventas = dynamic_cast<EmpleadoDeVentas*>(empleado);
                     while(!exit) {
                         cout << endl;
+                        cout << "--------------------------------------------------------------" << endl;
+                        cout << "Bienvenido empleado " << ventas->getNombre() << " " << ventas->getApellido() << endl;
+                        cout << "--------------------------------------------------------------" << endl;
                         cout << "Seleccione lo que quiere hacer: " << endl;
                         cout << "1. Facturar reserva" << endl;
                         cout << "2. Salir" << endl;
                         cin >> choice;
                         switch (choice) {
                             case 1:{
+                                cout << endl;
+                                cout << "--------------------------------------------------------------" << endl;
                                 cout<<"Ingrese el DNI del cliente cuya reserva desea facturar: "<<endl;
                                 string dni;
                                 cin >> dni;
